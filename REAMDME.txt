@@ -1,0 +1,42 @@
+# Participants #
+- Damien DELOCHE
+- Stéphane GUARDO
+- Vincent LAFOSSE
+
+# Description du dépôt #
+Dépôt Git destiné à héberger, versionner le code du serveur Arduino du projet IoT.
+Il recense également les objectifs voulus, les difficultés rencontrées et les solutions prises.
+
+# Spécificité de la branche #
+Branch destiné à la réalisation d'un server, ainsi que d'une detection de sonnette.
+
+# Matériel #
+esp8266
+capteur piezo vibrations
+
+
+# Travaux #
+Etape 1:
+Récupération et analyse de l'exemple permettant d'utiliser un "piezo".
+Etude des résultats, et affinage du palier de détection. La detection était plus que moyenne, il était necessaire de taper fortement sur le capteur pour avoir des retours de l'esp8266. Les valeurs remontées ne nous convenaient pas. 
+
+Etape 2: 
+Récupération et test d'un microphone.
+Les valeurs relevées lors du POC étaient meilleurs que celles avec le piezo précédent.
+
+Etape 3: 
+Test d'un "piezo vibration", à coller au boitier ou la porte et détecter les vibration émise par le son. Lors des différents tests avec un affinage externe (potentiomètre) les sons émis par une personne sur certaine type de porte n'était pas pris en compte. 
+
+Etape 4: 
+Récupération du POC pour allumer les diodes, et intégration dans le code du projet de l'étape 2, pour allumer un diode de notification( debug) lors de nos tests, avec une sortie des valeurs relevées sur le port de série. 
+
+
+Etape 5: 
+Réalisation d'un POC pour une api délivrant un statut en fonction de la valeur du capteur (microphone). 
+
+Etape 6: 
+Intégration du POC dans le code de l'étape 4. 
+
+Etape 6: 
+Définition des routes, puis implémentation.
+
